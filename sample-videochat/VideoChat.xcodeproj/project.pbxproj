@@ -11,6 +11,8 @@
 		3AA1FE5A19CD6A2B0059B5DA /* DashboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AA1FE5819CD6A2B0059B5DA /* DashboardViewController.xib */; };
 		3AA1FE6519CD76B60059B5DA /* AlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA1FE6319CD76B60059B5DA /* AlarmViewController.m */; };
 		3AA1FE6619CD76B60059B5DA /* AlarmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AA1FE6419CD76B60059B5DA /* AlarmViewController.xib */; };
+		3AA1FE6B19CD7A210059B5DA /* CallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA1FE6919CD7A210059B5DA /* CallViewController.m */; };
+		3AA1FE6C19CD7A210059B5DA /* CallViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AA1FE6A19CD7A210059B5DA /* CallViewController.xib */; };
 		434E9CC91608A01F00A4FB2D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 434E9CC81608A01F00A4FB2D /* libz.dylib */; };
 		434E9CCB1608A02F00A4FB2D /* libresolv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 434E9CCA1608A02E00A4FB2D /* libresolv.dylib */; };
 		434E9CCD1608A03E00A4FB2D /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 434E9CCC1608A03E00A4FB2D /* libxml2.dylib */; };
@@ -48,6 +50,9 @@
 		3AA1FE6219CD76B60059B5DA /* AlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlarmViewController.h; path = AlarmViewController/AlarmViewController.h; sourceTree = "<group>"; };
 		3AA1FE6319CD76B60059B5DA /* AlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlarmViewController.m; path = AlarmViewController/AlarmViewController.m; sourceTree = "<group>"; };
 		3AA1FE6419CD76B60059B5DA /* AlarmViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AlarmViewController.xib; path = AlarmViewController/AlarmViewController.xib; sourceTree = "<group>"; };
+		3AA1FE6819CD7A210059B5DA /* CallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CallViewController.h; path = CallViewController/CallViewController.h; sourceTree = "<group>"; };
+		3AA1FE6919CD7A210059B5DA /* CallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CallViewController.m; path = CallViewController/CallViewController.m; sourceTree = "<group>"; };
+		3AA1FE6A19CD7A210059B5DA /* CallViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CallViewController.xib; path = CallViewController/CallViewController.xib; sourceTree = "<group>"; };
 		434E9CC81608A01F00A4FB2D /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		434E9CCA1608A02E00A4FB2D /* libresolv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libresolv.dylib; path = usr/lib/libresolv.dylib; sourceTree = SDKROOT; };
 		434E9CCC1608A03E00A4FB2D /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
@@ -134,6 +139,16 @@
 			name = AlarmViewController;
 			sourceTree = "<group>";
 		};
+		3AA1FE6719CD79AD0059B5DA /* CallViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3AA1FE6819CD7A210059B5DA /* CallViewController.h */,
+				3AA1FE6919CD7A210059B5DA /* CallViewController.m */,
+				3AA1FE6A19CD7A210059B5DA /* CallViewController.xib */,
+			);
+			name = CallViewController;
+			sourceTree = "<group>";
+		};
 		43774BCE160893D500DDBF12 = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +207,7 @@
 		FA078F7316C94833003E8E5A /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				3AA1FE6719CD79AD0059B5DA /* CallViewController */,
 				3AA1FE6119CD76A30059B5DA /* AlarmViewController */,
 				3AA1FE4419CD60AE0059B5DA /* DashboardViewController */,
 				FA078F7416C94833003E8E5A /* MainViewController */,
@@ -308,6 +324,7 @@
 			files = (
 				FA078F7D16C94833003E8E5A /* InfoPlist.strings in Resources */,
 				BF6860F919780D1F00496FFB /* Media.xcassets in Resources */,
+				3AA1FE6C19CD7A210059B5DA /* CallViewController.xib in Resources */,
 				FA078F8916C94833003E8E5A /* MainViewController.xib in Resources */,
 				FA078F8B16C94833003E8E5A /* SplashViewController.xib in Resources */,
 				3AA1FE6619CD76B60059B5DA /* AlarmViewController.xib in Resources */,
@@ -328,6 +345,7 @@
 				FA078F7C16C94833003E8E5A /* AppDelegate.m in Sources */,
 				FA078F7E16C94833003E8E5A /* main.m in Sources */,
 				FA078F8816C94833003E8E5A /* MainViewController.m in Sources */,
+				3AA1FE6B19CD7A210059B5DA /* CallViewController.m in Sources */,
 				FA078F8A16C94833003E8E5A /* SplashViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
