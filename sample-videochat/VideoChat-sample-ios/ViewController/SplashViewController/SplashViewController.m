@@ -80,7 +80,6 @@
 
 - (void)chatDidLogin{
     // Show Main controller
-    AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
 //    MainViewController *mainViewController = [[MainViewController alloc] init];
 //    mainViewController.opponentID = appDelegate.currentUser == 1 ? appDelegate.testOpponents[5] : appDelegate.testOpponents[2];
 //    [self presentViewController:mainViewController animated:YES completion:nil];

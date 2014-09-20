@@ -1,34 +1,25 @@
 //
-//  DashboardViewController.m
+//  CallViewController.m
 //  VideoChat
 //
 //  Created by Ali Dinani on 2014-09-20.
 //  Copyright (c) 2014 Ruslan. All rights reserved.
 //
 
-#import "DashboardViewController.h"
 #import "CallViewController.h"
-#import "AlarmViewController.h"
+#import "MainViewController.h"
 
-@interface DashboardViewController ()
-
+@interface CallViewController ()
 @end
 
-@implementation DashboardViewController
+@implementation CallViewController
 
-- (IBAction)itsBedtime:(id)sender {
-    AlarmViewController *alarmView = [[AlarmViewController alloc] init];
-    [self presentViewController:alarmView animated:YES completion:nil];
-}
-
-- (IBAction)makeACall:(id)sender {
-    CallViewController *call = [[CallViewController alloc] init];
-    [self presentViewController:call animated:YES completion:nil];
-}
+int secondsLeft;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    secondsLeft = 5;
+    [self countdownTimer: timer];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,6 +27,19 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)updateTimer {
+    if (secondsLeft > 1){
+        secondsLeft--;
+        self.countDown.text = [NSString stringWithFormat:@"%2d", secondsLeft];
+    } else {
+        MainViewController *main = [[MainViewController alloc] init];
+        [self presentViewController:main animated:YES completion:nil];
+    }
+}
+
+- (void)countdownTimer:(NSTimer *)theTimer {
+    timer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(updateTimer) userInfo:nil repeats:YES];
+}
 /*
 #pragma mark - Navigation
 

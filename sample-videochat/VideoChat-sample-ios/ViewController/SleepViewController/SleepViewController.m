@@ -1,30 +1,19 @@
 //
-//  DashboardViewController.m
+//  SleepViewController.m
 //  VideoChat
 //
 //  Created by Ali Dinani on 2014-09-20.
 //  Copyright (c) 2014 Ruslan. All rights reserved.
 //
 
-#import "DashboardViewController.h"
-#import "CallViewController.h"
+#import "SleepViewController.h"
 #import "AlarmViewController.h"
 
-@interface DashboardViewController ()
+@interface SleepViewController ()
 
 @end
 
-@implementation DashboardViewController
-
-- (IBAction)itsBedtime:(id)sender {
-    AlarmViewController *alarmView = [[AlarmViewController alloc] init];
-    [self presentViewController:alarmView animated:YES completion:nil];
-}
-
-- (IBAction)makeACall:(id)sender {
-    CallViewController *call = [[CallViewController alloc] init];
-    [self presentViewController:call animated:YES completion:nil];
-}
+@implementation SleepViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -34,6 +23,11 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)awake:(id)sender {
+    AlarmViewController *alarmView = [[AlarmViewController alloc] init];
+    [self presentViewController:alarmView animated:YES completion:nil];
 }
 
 /*
