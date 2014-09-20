@@ -21,17 +21,6 @@
     
     [application setIdleTimerDisabled:YES];
     
-    //
-    // There are 2 tests opponents:
-    //
-    // User1:
-    //  -ID: 65421
-    //  -login: videoChatUser1
-    //  -password: videoChatUser1pass
-    // User2:
-    //  -ID: 65422
-    //  -login: videoChatUser2
-    //  -password: videoChatUser2pass
     self.testOpponents = @[@"ali", @"alidinani", @1606373,
                       @"shub", @"shubshub", @1606378];
     //

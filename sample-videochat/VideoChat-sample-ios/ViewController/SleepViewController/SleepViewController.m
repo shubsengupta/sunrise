@@ -8,6 +8,7 @@
 
 #import "SleepViewController.h"
 #import "AlarmViewController.h"
+#import "AppDelegate.h"
 
 @interface SleepViewController ()
 
@@ -20,6 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self updateAlarm];
     [self updateTime];
     [self startTimer: timer];
 }
@@ -45,6 +47,16 @@
 
 - (void)startTimer:(NSTimer *)theTimer {
     timer = [NSTimer scheduledTimerWithTimeInterval:5.0f target:self selector:@selector(updateTime) userInfo:nil repeats:YES];
+}
+
+- (void)updateAlarm {
+    AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    NSDateFormatter *outputFormatter = [[NSDateFormatter alloc] init];
+    [outputFormatter setDateFormat:@"h:mm a"];
+    NSString *dateString = [outputFormatter stringFromDate: appDelegate.alarmDate];
+    
+    
+    self.alarmLabel.text = [NSString stringWithFormat: @"You will recieve a call around %@", dateString];
 }
 
 /*

@@ -20,6 +20,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    //
     self.userName.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"USERNAME" attributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
     self.userPass.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"PASSWORD" attributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
     [self.userName becomeFirstResponder];
@@ -78,12 +80,17 @@
 }
 
 - (void)loginToChat:(QBASession *)session{
+    AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    
     // Set QuickBlox Chat delegate
     [QBChat instance].delegate = self;
     
     QBUUser *user = [QBUUser user];
     user.ID = session.userID;
     user.password = self.userPass.text;
+    
+    appDelegate.userName = self.userName.text;
+    appDelegate.userPass = self.userPass.text;
     
     // Login to QuickBlox Chat
     [[QBChat instance] loginWithUser:user];

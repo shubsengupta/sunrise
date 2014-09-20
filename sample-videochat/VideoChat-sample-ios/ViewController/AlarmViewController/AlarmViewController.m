@@ -8,8 +8,10 @@
 
 #import "AlarmViewController.h"
 #import "SleepViewController.h"
+#import "AppDelegate.h"
 
 @interface AlarmViewController ()
+@property (strong, nonatomic) IBOutlet UIDatePicker *alarmTime;
 
 @end
 
@@ -26,7 +28,9 @@
 }
 
 - (IBAction)setAlarm:(id)sender {
+    AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
     SleepViewController *sleepView = [[SleepViewController alloc] init];
+    appDelegate.alarmDate = self.alarmTime.date;
     [self presentViewController:sleepView animated:YES completion:nil];
 }
 

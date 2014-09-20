@@ -23,4 +23,11 @@
 /* Current logged in test user*/
 @property (assign, nonatomic) int currentUser;
 
+/* Date of current alarm */
+@property (strong, nonatomic) NSDate *alarmDate;
+
+/* User credentials */
+@property (strong, nonatomic) NSString *userName;
+@property (strong, nonatomic) NSString *userPass;
+
 @end
