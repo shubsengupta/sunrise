@@ -30,6 +30,14 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (IBAction)userNameNext:(id)sender {
+    [self.userPass becomeFirstResponder];
+}
+
+- (IBAction)passDone:(id)sender {
+    [self logInAsUser:sender];
+}
+
 - (IBAction)logInAsUser:(id)sender {
     AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
     appDelegate.currentUser = 1; // this is used to display the user number
