@@ -45,18 +45,6 @@
     [NSTimer scheduledTimerWithTimeInterval:30 target:[QBChat instance] selector:@selector(sendPresence) userInfo:nil repeats:YES];
 }
 
-- (IBAction)audioOutputDidChange:(UISegmentedControl *)sender{
-    if(self.videoChat != nil){
-        self.videoChat.useHeadphone = sender.selectedSegmentIndex;
-    }
-}
-
-- (IBAction)videoOutputDidChange:(UISegmentedControl *)sender{
-    if(self.videoChat != nil){
-        self.videoChat.useBackCamera = sender.selectedSegmentIndex;
-    }
-}
-
 - (IBAction)call:(id)sender{
     // Call
     if(callButton.tag == 101){
@@ -72,8 +60,8 @@
         
         // Set Audio & Video output
         //
-        self.videoChat.useHeadphone = audioOutput.selectedSegmentIndex;
-        self.videoChat.useBackCamera = videoOutput.selectedSegmentIndex;
+        self.videoChat.useHeadphone = false;
+        self.videoChat.useBackCamera = false;
     
         // Call user by ID
         //
@@ -94,8 +82,8 @@
         [self.videoChat finishCall];
         
         myVideoView.hidden = YES;
-        opponentVideoView.layer.contents = (id)[[UIImage imageNamed:@"person.png"] CGImage];
-        opponentVideoView.image = [UIImage imageNamed:@"person.png"];
+        opponentVideoView.layer.contents = (id)[[UIImage imageNamed:@"blackpx.png"] CGImage];
+        opponentVideoView.image = [UIImage imageNamed:@"blackpx.png"];
         AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
         [callButton setTitle:appDelegate.currentUser == 1 ? @"Call User2" : @"Call User1" forState:UIControlStateNormal];
         

@@ -10,6 +10,7 @@
 		22D2F64B19CD7BCA009675CA /* 640x960.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D2F64A19CD7BCA009675CA /* 640x960.png */; };
 		22D2F64D19CD7C2E009675CA /* 640x1136.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D2F64C19CD7C2E009675CA /* 640x1136.png */; };
 		22D2F64F19CD7CBA009675CA /* 320x480.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D2F64E19CD7CBA009675CA /* 320x480.png */; };
+		3A59EB7819CE1401007ACD80 /* blackpx.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A59EB7719CE1401007ACD80 /* blackpx.png */; };
 		3AA1FE5919CD6A2B0059B5DA /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA1FE5719CD6A2B0059B5DA /* DashboardViewController.m */; };
 		3AA1FE5A19CD6A2B0059B5DA /* DashboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AA1FE5819CD6A2B0059B5DA /* DashboardViewController.xib */; };
 		3AA1FE6519CD76B60059B5DA /* AlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA1FE6319CD76B60059B5DA /* AlarmViewController.m */; };
@@ -53,6 +54,7 @@
 		22D2F64A19CD7BCA009675CA /* 640x960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 640x960.png; sourceTree = "<group>"; };
 		22D2F64C19CD7C2E009675CA /* 640x1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 640x1136.png; sourceTree = "<group>"; };
 		22D2F64E19CD7CBA009675CA /* 320x480.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 320x480.png; sourceTree = "<group>"; };
+		3A59EB7719CE1401007ACD80 /* blackpx.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackpx.png; sourceTree = "<group>"; };
 		3AA1FE5619CD6A2B0059B5DA /* DashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashboardViewController.h; sourceTree = "<group>"; };
 		3AA1FE5719CD6A2B0059B5DA /* DashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashboardViewController.m; sourceTree = "<group>"; };
 		3AA1FE5819CD6A2B0059B5DA /* DashboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DashboardViewController.xib; sourceTree = "<group>"; };
@@ -246,6 +248,7 @@
 		FA078F7416C94833003E8E5A /* MainViewController */ = {
 			isa = PBXGroup;
 			children = (
+				3A59EB7719CE1401007ACD80 /* blackpx.png */,
 				FA078F7516C94833003E8E5A /* MainViewController.h */,
 				FA078F7616C94833003E8E5A /* MainViewController.m */,
 				FA078F7716C94833003E8E5A /* MainViewController.xib */,
@@ -353,6 +356,7 @@
 				FA078F7D16C94833003E8E5A /* InfoPlist.strings in Resources */,
 				3AA1FE7219CD94AB0059B5DA /* SleepViewController.xib in Resources */,
 				BF6860F919780D1F00496FFB /* Media.xcassets in Resources */,
+				3A59EB7819CE1401007ACD80 /* blackpx.png in Resources */,
 				3AA1FE6C19CD7A210059B5DA /* CallViewController.xib in Resources */,
 				3AA1FE7419CDB2820059B5DA /* splashback640x1136.png in Resources */,
 				FA078F8916C94833003E8E5A /* MainViewController.xib in Resources */,
