@@ -24,7 +24,7 @@
 
 - (IBAction)logInAsUser:(id)sender {
     AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
-    appDelegate.currentUser = 1; // for some reason this needs to match the user logging in
+    appDelegate.currentUser = 1; // this is used to display the user number
     
     // Create a QB Session
     QBSessionParameters *parameters = [QBSessionParameters new];
@@ -46,15 +46,12 @@
 - (void(^)(QBResponse *))handleError
 {
     return ^(QBResponse *response) {
+        // re-enable the text fields
         self.userName.enabled = YES;
         self.userPass.enabled = YES;
         [activityIndicator stopAnimating];
         
-//        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", "")
-//                                                        message:[response.error description]
-//                                                       delegate:nil
-//                                              cancelButtonTitle:NSLocalizedString(@"OK", "")
-//                                              otherButtonTitles:nil];
+        // let the user know the log in info failed
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Sorry","")
                                                         message: @"Your username or password is invalid"
                                                        delegate:nil
@@ -73,7 +70,7 @@
     
     QBUUser *user = [QBUUser user];
     user.ID = session.userID;
-    user.password = appDelegate.currentUser == 1 ? appDelegate.testOpponents[1] : appDelegate.testOpponents[4];
+    user.password = self.userPass.text;
     
     // Login to QuickBlox Chat
     //
@@ -93,8 +90,8 @@
 }
 
 - (void)chatDidNotLogin{
-    loginAsUser1Button.enabled = YES;
-    loginAsUser2Button.enabled = YES;
+    self.userPass.enabled = YES;
+    self.userName.enabled = YES;
 }
 
 @end
