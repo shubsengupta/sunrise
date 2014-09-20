@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2298E3C219CE18980086788B /* generalbg640x1136.png in Resources */ = {isa = PBXBuildFile; fileRef = 2298E3C119CE18980086788B /* generalbg640x1136.png */; };
+		2298E3C419CE29540086788B /* dashbg640x1136.png in Resources */ = {isa = PBXBuildFile; fileRef = 2298E3C319CE29540086788B /* dashbg640x1136.png */; };
 		22D2F64B19CD7BCA009675CA /* 640x960.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D2F64A19CD7BCA009675CA /* 640x960.png */; };
 		22D2F64D19CD7C2E009675CA /* 640x1136.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D2F64C19CD7C2E009675CA /* 640x1136.png */; };
 		22D2F64F19CD7CBA009675CA /* 320x480.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D2F64E19CD7CBA009675CA /* 320x480.png */; };
@@ -55,6 +56,7 @@
 
 /* Begin PBXFileReference section */
 		2298E3C119CE18980086788B /* generalbg640x1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = generalbg640x1136.png; sourceTree = "<group>"; };
+		2298E3C319CE29540086788B /* dashbg640x1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dashbg640x1136.png; sourceTree = "<group>"; };
 		22D2F64A19CD7BCA009675CA /* 640x960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 640x960.png; sourceTree = "<group>"; };
 		22D2F64C19CD7C2E009675CA /* 640x1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 640x1136.png; sourceTree = "<group>"; };
 		22D2F64E19CD7CBA009675CA /* 320x480.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 320x480.png; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				2298E3C119CE18980086788B /* generalbg640x1136.png */,
+				2298E3C319CE29540086788B /* dashbg640x1136.png */,
 				22D2F64E19CD7CBA009675CA /* 320x480.png */,
 				22D2F64C19CD7C2E009675CA /* 640x1136.png */,
 				22D2F64A19CD7BCA009675CA /* 640x960.png */,
@@ -383,6 +386,7 @@
 				22D2F64F19CD7CBA009675CA /* 320x480.png in Resources */,
 				FA078F8B16C94833003E8E5A /* SplashViewController.xib in Resources */,
 				3AA1FE6619CD76B60059B5DA /* AlarmViewController.xib in Resources */,
+				2298E3C419CE29540086788B /* dashbg640x1136.png in Resources */,
 				FA078F9E16C94869003E8E5A /* ringing.wav in Resources */,
 				3A59EB8319CE1B7C007ACD80 /* SleepingViewController.xib in Resources */,
 				2298E3C219CE18980086788B /* generalbg640x1136.png in Resources */,
