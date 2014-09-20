@@ -1,19 +1,19 @@
 //
-//  AlarmViewController.m
+//  SleepViewController.m
 //  VideoChat
 //
 //  Created by Ali Dinani on 2014-09-20.
 //  Copyright (c) 2014 Ruslan. All rights reserved.
 //
 
-#import "AlarmViewController.h"
 #import "SleepViewController.h"
+#import "AlarmViewController.h"
 
-@interface AlarmViewController ()
+@interface SleepViewController ()
 
 @end
 
-@implementation AlarmViewController
+@implementation SleepViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -25,9 +25,9 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)setAlarm:(id)sender {
-    SleepViewController *sleepView = [[SleepViewController alloc] init];
-    [self presentViewController:sleepView animated:YES completion:nil];
+- (IBAction)awake:(id)sender {
+    AlarmViewController *alarmView = [[AlarmViewController alloc] init];
+    [self presentViewController:alarmView animated:YES completion:nil];
 }
 
 /*
