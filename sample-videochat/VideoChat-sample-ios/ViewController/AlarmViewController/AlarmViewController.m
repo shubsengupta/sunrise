@@ -1,30 +1,18 @@
 //
-//  DashboardViewController.m
+//  AlarmViewController.m
 //  VideoChat
 //
 //  Created by Ali Dinani on 2014-09-20.
 //  Copyright (c) 2014 Ruslan. All rights reserved.
 //
 
-#import "DashboardViewController.h"
-#import "MainViewController.h"
 #import "AlarmViewController.h"
 
-@interface DashboardViewController ()
+@interface AlarmViewController ()
 
 @end
 
-@implementation DashboardViewController
-
-- (IBAction)itsBedtime:(id)sender {
-    AlarmViewController *alarmView = [[AlarmViewController alloc] init];
-    [self presentViewController:alarmView animated:YES completion:nil];
-}
-
-- (IBAction)makeACall:(id)sender {
-    MainViewController *main = [[MainViewController alloc] init];
-    [self presentViewController:main animated:YES completion:nil];
-}
+@implementation AlarmViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
