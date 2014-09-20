@@ -42,7 +42,7 @@
 
 - (IBAction)logInAsUser:(id)sender {
     AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
-    appDelegate.currentUser = 1; // this is used to display the user number
+    appDelegate.currentUser = ([self.userName isEqual: @"ali"]) ? 1 : 2;
     
     // Create a QB Session
     QBSessionParameters *parameters = [QBSessionParameters new];
