@@ -8,6 +8,7 @@
 
 #import "SplashViewController.h"
 #import "MainViewController.h"
+#import "DashboardViewController.h"
 #import "AppDelegate.h"
 
 @interface SplashViewController ()
@@ -62,10 +63,7 @@
 }
 
 - (void)loginToChat:(QBASession *)session{
-    AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
-    
     // Set QuickBlox Chat delegate
-    //
     [QBChat instance].delegate = self;
     
     QBUUser *user = [QBUUser user];
@@ -73,7 +71,6 @@
     user.password = self.userPass.text;
     
     // Login to QuickBlox Chat
-    //
     [[QBChat instance] loginWithUser:user];
 }
 
@@ -84,9 +81,11 @@
 - (void)chatDidLogin{
     // Show Main controller
     AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
-    MainViewController *mainViewController = [[MainViewController alloc] init];
-    mainViewController.opponentID = appDelegate.currentUser == 1 ? appDelegate.testOpponents[5] : appDelegate.testOpponents[2];
-    [self presentViewController:mainViewController animated:YES completion:nil];
+//    MainViewController *mainViewController = [[MainViewController alloc] init];
+//    mainViewController.opponentID = appDelegate.currentUser == 1 ? appDelegate.testOpponents[5] : appDelegate.testOpponents[2];
+//    [self presentViewController:mainViewController animated:YES completion:nil];
+    DashboardViewController *dash = [[DashboardViewController alloc] init];
+    [self presentViewController:dash animated:YES completion:nil];
 }
 
 - (void)chatDidNotLogin{
