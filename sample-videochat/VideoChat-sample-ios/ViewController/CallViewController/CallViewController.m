@@ -7,6 +7,7 @@
 //
 
 #import "CallViewController.h"
+#import "MainViewController.h"
 
 @interface CallViewController ()
 @end
@@ -27,8 +28,13 @@ int secondsLeft;
 }
 
 - (void)updateTimer {
-    secondsLeft--;
-    self.countDown.text = [NSString stringWithFormat:@"%2d", secondsLeft];
+    if (secondsLeft > 1){
+        secondsLeft--;
+        self.countDown.text = [NSString stringWithFormat:@"%2d", secondsLeft];
+    } else {
+        MainViewController *main = [[MainViewController alloc] init];
+        [self presentViewController:main animated:YES completion:nil];
+    }
 }
 
 - (void)countdownTimer:(NSTimer *)theTimer {
