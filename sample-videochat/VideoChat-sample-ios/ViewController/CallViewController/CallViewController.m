@@ -8,6 +8,7 @@
 
 #import "CallViewController.h"
 #import "MainViewController.h"
+#import "AppDelegate.h"
 
 @interface CallViewController ()
 @end
@@ -32,7 +33,9 @@ int secondsLeft;
         secondsLeft--;
         self.countDown.text = [NSString stringWithFormat:@"%2d", secondsLeft];
     } else {
+        AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
         MainViewController *main = [[MainViewController alloc] init];
+        main.opponentID = appDelegate.currentUser == 1 ? appDelegate.testOpponents[5] : appDelegate.testOpponents[2];
         [self presentViewController:main animated:YES completion:nil];
         [timer invalidate];
     }
