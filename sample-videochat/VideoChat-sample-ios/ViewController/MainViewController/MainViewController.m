@@ -48,57 +48,27 @@
 }
 
 - (void)call{
-    // Call
-//    if(callButton.tag == 101){
-//        callButton.tag = 102;
-//        
-        // Setup video chat
-        //
-        if(self.videoChat == nil){
-            self.videoChat = [[QBChat instance] createAndRegisterVideoChatInstance];
-            self.videoChat.viewToRenderOpponentVideoStream = opponentVideoView;
-            self.videoChat.viewToRenderOwnVideoStream = myVideoView;
-        }
-        
-        // Set Audio & Video output
-        //
-        self.videoChat.useHeadphone = false;
-        self.videoChat.useBackCamera = false;
+
+    if(self.videoChat == nil){
+        self.videoChat = [[QBChat instance] createAndRegisterVideoChatInstance];
+        self.videoChat.viewToRenderOpponentVideoStream = opponentVideoView;
+        self.videoChat.viewToRenderOwnVideoStream = myVideoView;
+    }
     
-        // Call user by ID
-        //
-        [self.videoChat callUser:[opponentID integerValue] conferenceType:QBVideoChatConferenceTypeAudioAndVideo];
+    // Set Audio & Video output
+    //
+    self.videoChat.useHeadphone = false;
+    self.videoChat.useBackCamera = false;
 
-        callButton.hidden = YES;
-        ringigngLabel.hidden = NO;
-        ringigngLabel.text = @"Calling...";
-        ringigngLabel.frame = CGRectMake(128, 375, 90, 37);
-        callingActivityIndicator.hidden = NO;
+    // Call user by ID
+    //
+    [self.videoChat callUser:[opponentID integerValue] conferenceType:QBVideoChatConferenceTypeAudioAndVideo];
 
-    // Finish
-//    }else{
-//        callButton.tag = 101;
-//        
-//        // Finish call
-//        //
-//        [self.videoChat finishCall];
-//        
-//        myVideoView.hidden = YES;
-//        opponentVideoView.layer.contents = (id)[[UIImage imageNamed:@"blackpx.png"] CGImage];
-//        opponentVideoView.image = [UIImage imageNamed:@"blackpx.png"];
-//        AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
-//        [callButton setTitle:appDelegate.currentUser == 1 ? @"Call User2" : @"Call User1" forState:UIControlStateNormal];
-//        
-//        opponentVideoView.layer.borderWidth = 1;
-//        
-//        [startingCallActivityIndicator stopAnimating];
-//        
-//        
-//        // release video chat
-//        //
-//        [[QBChat instance] unregisterVideoChatInstance:self.videoChat];
-//        self.videoChat = nil;
-//    }
+    callButton.hidden = YES;
+    ringigngLabel.hidden = NO;
+    ringigngLabel.text = @"Calling...";
+    ringigngLabel.frame = CGRectMake(128, 375, 90, 37);
+    callingActivityIndicator.hidden = NO;
 }
 
 - (void)reject{

@@ -11,9 +11,12 @@
 @interface SleepingViewController : UIViewController <QBChatDelegate, AVAudioPlayerDelegate, UIAlertViewDelegate>{
     IBOutlet UIImageView *opponentVideoView;
     IBOutlet UIImageView *myVideoView;
+    IBOutlet UILabel *timeLabel;
+    IBOutlet UILabel *alarmLabel;
     
     AVAudioPlayer *ringingPlayer;
 
+    NSTimer *timer;
     NSUInteger videoChatOpponentID;
     enum QBVideoChatConferenceType videoChatConferenceType;
     NSString *sessionID;

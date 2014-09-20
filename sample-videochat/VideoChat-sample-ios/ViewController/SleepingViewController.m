@@ -19,6 +19,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self updateAlarmText];
+    [self updateTime];
+    [self startTimer: timer];
 }
 
 - (void)viewDidAppear:(BOOL)animated{
@@ -34,6 +37,30 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)updateAlarmText {
+    AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    NSDateFormatter *outputFormatter = [[NSDateFormatter alloc] init];
+    [outputFormatter setDateFormat:@"h:mm a"];
+    NSString *dateString = [outputFormatter stringFromDate: appDelegate.alarmDate];
+    
+    
+    alarmLabel.text = [NSString stringWithFormat: @"ALARM AROUND %@", dateString];
+}
+
+- (void)updateTime {
+    NSDate *today = [NSDate date];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    // display in 12HR/24HR (i.e. 11:25PM or 23:25) format according to User Settings
+    [dateFormatter setTimeStyle:NSDateFormatterShortStyle];
+    NSString *currentTime = [dateFormatter stringFromDate:today];
+    timeLabel.text = currentTime;
+}
+
+- (void)startTimer:(NSTimer *)theTimer {
+    timer = [NSTimer scheduledTimerWithTimeInterval:5.0f target:self selector:@selector(updateTime) userInfo:nil repeats:YES];
+}
+
+
 - (void)accept{
     NSLog(@"accept");
     
@@ -47,6 +74,8 @@
     // Set Audio & Video output
     self.videoChat.useHeadphone = false;
     self.videoChat.useBackCamera = false;
+    alarmLabel.hidden = YES;
+    timeLabel.textColor = [UIColor greenColor];
     
     // Accept call
     [self.videoChat acceptCallWithOpponentID:videoChatOpponentID conferenceType:videoChatConferenceType];
