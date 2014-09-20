@@ -34,6 +34,8 @@
         audioOutput.frame = CGRectMake(audioOutput.frame.origin.x-15, audioOutput.frame.origin.y, audioOutput.frame.size.width+50, audioOutput.frame.size.height);
         videoOutput.transform = CGAffineTransformScale(CGAffineTransformIdentity, 0.8, 0.8);
     }
+    
+    [self call];
 }
 
 - (void)viewDidAppear:(BOOL)animated{
@@ -45,7 +47,7 @@
     [NSTimer scheduledTimerWithTimeInterval:30 target:[QBChat instance] selector:@selector(sendPresence) userInfo:nil repeats:YES];
 }
 
-- (IBAction)call:(id)sender{
+- (void)call{
     // Call
     if(callButton.tag == 101){
         callButton.tag = 102;
