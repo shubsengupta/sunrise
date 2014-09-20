@@ -15,9 +15,13 @@
 
 @implementation SleepViewController
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self updateTime];
+    [self startTimer: timer];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -28,6 +32,19 @@
 - (IBAction)awake:(id)sender {
     AlarmViewController *alarmView = [[AlarmViewController alloc] init];
     [self presentViewController:alarmView animated:YES completion:nil];
+}
+
+- (IBAction)updateTime {
+    NSDate *today = [NSDate date];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    // display in 12HR/24HR (i.e. 11:25PM or 23:25) format according to User Settings
+    [dateFormatter setTimeStyle:NSDateFormatterShortStyle];
+    NSString *currentTime = [dateFormatter stringFromDate:today];
+    self.timeLabel.text = currentTime;
+}
+
+- (void)startTimer:(NSTimer *)theTimer {
+    timer = [NSTimer scheduledTimerWithTimeInterval:5.0f target:self selector:@selector(updateTime) userInfo:nil repeats:YES];
 }
 
 /*
