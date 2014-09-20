@@ -36,7 +36,7 @@
 @property (strong) QBVideoChat *videoChat;
 @property (strong) UIAlertView *callAlert;
 
-- (IBAction)call:(id)sender;
+- (void)call;
 - (void)reject;
 - (void)accept;
 
