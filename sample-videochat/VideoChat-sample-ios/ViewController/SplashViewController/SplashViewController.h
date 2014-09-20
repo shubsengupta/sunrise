@@ -20,7 +20,8 @@
 
 @property (strong, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 
-- (IBAction)loginAsUser1:(id)sender;
-- (IBAction)loginAsUser2:(id)sender;
+@property (strong, nonatomic) IBOutlet UITextField *userName;
+@property (strong, nonatomic) IBOutlet UITextField *userPass;
+@property (strong, nonatomic) IBOutlet UIButton *logInButton;
 
 @end

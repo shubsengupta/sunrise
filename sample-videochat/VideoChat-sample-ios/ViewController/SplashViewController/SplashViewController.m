@@ -22,18 +22,14 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (IBAction)loginAsUser1:(id)sender{
+- (IBAction)logInAsUser:(id)sender {
     AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
-    appDelegate.currentUser = 1;
+    appDelegate.currentUser = 1; // for some reason this needs to match the user logging in
     
-    
-    // Your app connects to QuickBlox server here.
-    //
-    // Create extended session request with user authorization
-    //
+    // Create a QB Session
     QBSessionParameters *parameters = [QBSessionParameters new];
-    parameters.userLogin = appDelegate.testOpponents[0];
-    parameters.userPassword = appDelegate.testOpponents[1];
+    parameters.userLogin = self.userName.text;
+    parameters.userPassword = self.userPass.text;
     
     // QuickBlox session creation
     [QBRequest createSessionWithExtendedParameters:parameters successBlock:^(QBResponse *response, QBASession *session) {
@@ -41,46 +37,26 @@
         
     } errorBlock:[self handleError]];
     
-    
-    
+    // Start the activity indicator and disable unnecessary fields
     [activityIndicator startAnimating];
-    
-    loginAsUser1Button.enabled = NO;
-    loginAsUser2Button.enabled = NO;
-}
-- (IBAction)loginAsUser2:(id)sender{
-    AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
-    appDelegate.currentUser = 2;
-    
-    
-    // Your app connects to QuickBlox server here.
-    //
-    // Create extended session request with user authorization
-    //
-    QBSessionParameters *parameters = [QBSessionParameters new];
-    parameters.userLogin = appDelegate.testOpponents[3];
-    parameters.userPassword = appDelegate.testOpponents[4];
-    
-    // QuickBlox session creation
-    [QBRequest createSessionWithExtendedParameters:parameters successBlock:^(QBResponse *response, QBASession *session) {
-        [self loginToChat:session];
-        
-    } errorBlock:[self handleError]];
-    
-    [activityIndicator startAnimating];
-    
-    loginAsUser1Button.enabled = NO;
-    loginAsUser2Button.enabled = NO;
+    self.userName.enabled = NO;
+    self.userPass.enabled = NO;
 }
 
 - (void(^)(QBResponse *))handleError
 {
     return ^(QBResponse *response) {
-        loginAsUser1Button.enabled = YES;
-        loginAsUser2Button.enabled = YES;
+        self.userName.enabled = YES;
+        self.userPass.enabled = YES;
+        [activityIndicator stopAnimating];
         
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", "")
-                                                        message:[response.error description]
+//        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", "")
+//                                                        message:[response.error description]
+//                                                       delegate:nil
+//                                              cancelButtonTitle:NSLocalizedString(@"OK", "")
+//                                              otherButtonTitles:nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Sorry","")
+                                                        message: @"Your username or password is invalid"
                                                        delegate:nil
                                               cancelButtonTitle:NSLocalizedString(@"OK", "")
                                               otherButtonTitles:nil];

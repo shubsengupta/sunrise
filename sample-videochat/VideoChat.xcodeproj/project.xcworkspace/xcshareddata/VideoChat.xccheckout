@@ -12,22 +12,34 @@
 	<dict>
 		<key>8F805784-3614-48B7-ADA5-1671905B41DF</key>
 		<string>ssh://github.com/QuickBlox/quickblox-ios-sdk.git</string>
+		<key>E928C03200C293B709AF21EC0D51A1DF18EBBB1A</key>
+		<string>github.com:shubsengupta/callmemaybe.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>sample-videochat/VideoChat.xcodeproj/project.xcworkspace</string>
+	<string>sample-videochat/VideoChat.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>8F805784-3614-48B7-ADA5-1671905B41DF</key>
+		<string>../../../../quickblox-ios-sdk</string>
+		<key>E928C03200C293B709AF21EC0D51A1DF18EBBB1A</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/QuickBlox/quickblox-ios-sdk.git</string>
+	<string>github.com:shubsengupta/callmemaybe.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>8F805784-3614-48B7-ADA5-1671905B41DF</string>
+	<string>E928C03200C293B709AF21EC0D51A1DF18EBBB1A</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E928C03200C293B709AF21EC0D51A1DF18EBBB1A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>callmemaybe</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
