@@ -11,6 +11,8 @@
 		22D2F64D19CD7C2E009675CA /* 640x1136.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D2F64C19CD7C2E009675CA /* 640x1136.png */; };
 		22D2F64F19CD7CBA009675CA /* 320x480.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D2F64E19CD7CBA009675CA /* 320x480.png */; };
 		3A59EB7819CE1401007ACD80 /* blackpx.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A59EB7719CE1401007ACD80 /* blackpx.png */; };
+		3A59EB8219CE1B7C007ACD80 /* SleepingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A59EB8019CE1B7C007ACD80 /* SleepingViewController.m */; };
+		3A59EB8319CE1B7C007ACD80 /* SleepingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A59EB8119CE1B7C007ACD80 /* SleepingViewController.xib */; };
 		3AA1FE5919CD6A2B0059B5DA /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA1FE5719CD6A2B0059B5DA /* DashboardViewController.m */; };
 		3AA1FE5A19CD6A2B0059B5DA /* DashboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AA1FE5819CD6A2B0059B5DA /* DashboardViewController.xib */; };
 		3AA1FE6519CD76B60059B5DA /* AlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA1FE6319CD76B60059B5DA /* AlarmViewController.m */; };
@@ -55,6 +57,9 @@
 		22D2F64C19CD7C2E009675CA /* 640x1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 640x1136.png; sourceTree = "<group>"; };
 		22D2F64E19CD7CBA009675CA /* 320x480.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 320x480.png; sourceTree = "<group>"; };
 		3A59EB7719CE1401007ACD80 /* blackpx.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackpx.png; sourceTree = "<group>"; };
+		3A59EB7F19CE1B7C007ACD80 /* SleepingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SleepingViewController.h; sourceTree = "<group>"; };
+		3A59EB8019CE1B7C007ACD80 /* SleepingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SleepingViewController.m; sourceTree = "<group>"; };
+		3A59EB8119CE1B7C007ACD80 /* SleepingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SleepingViewController.xib; sourceTree = "<group>"; };
 		3AA1FE5619CD6A2B0059B5DA /* DashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashboardViewController.h; sourceTree = "<group>"; };
 		3AA1FE5719CD6A2B0059B5DA /* DashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashboardViewController.m; sourceTree = "<group>"; };
 		3AA1FE5819CD6A2B0059B5DA /* DashboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DashboardViewController.xib; sourceTree = "<group>"; };
@@ -134,6 +139,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A59EB7919CE19FC007ACD80 /* SleepingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3A59EB7F19CE1B7C007ACD80 /* SleepingViewController.h */,
+				3A59EB8019CE1B7C007ACD80 /* SleepingViewController.m */,
+				3A59EB8119CE1B7C007ACD80 /* SleepingViewController.xib */,
+			);
+			name = SleepingViewController;
+			sourceTree = "<group>";
+		};
 		3AA1FE4419CD60AE0059B5DA /* DashboardViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +250,7 @@
 		FA078F7316C94833003E8E5A /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				3A59EB7919CE19FC007ACD80 /* SleepingViewController */,
 				3AA1FE6D19CD94850059B5DA /* SleepViewController */,
 				3AA1FE6719CD79AD0059B5DA /* CallViewController */,
 				3AA1FE6119CD76A30059B5DA /* AlarmViewController */,
@@ -365,6 +381,7 @@
 				FA078F8B16C94833003E8E5A /* SplashViewController.xib in Resources */,
 				3AA1FE6619CD76B60059B5DA /* AlarmViewController.xib in Resources */,
 				FA078F9E16C94869003E8E5A /* ringing.wav in Resources */,
+				3A59EB8319CE1B7C007ACD80 /* SleepingViewController.xib in Resources */,
 				3AA1FE5A19CD6A2B0059B5DA /* DashboardViewController.xib in Resources */,
 				22D2F64B19CD7BCA009675CA /* 640x960.png in Resources */,
 			);
@@ -380,6 +397,7 @@
 				3AA1FE7119CD94AB0059B5DA /* SleepViewController.m in Sources */,
 				3AA1FE6519CD76B60059B5DA /* AlarmViewController.m in Sources */,
 				3AA1FE5919CD6A2B0059B5DA /* DashboardViewController.m in Sources */,
+				3A59EB8219CE1B7C007ACD80 /* SleepingViewController.m in Sources */,
 				FA078F7C16C94833003E8E5A /* AppDelegate.m in Sources */,
 				FA078F7E16C94833003E8E5A /* main.m in Sources */,
 				FA078F8816C94833003E8E5A /* MainViewController.m in Sources */,
