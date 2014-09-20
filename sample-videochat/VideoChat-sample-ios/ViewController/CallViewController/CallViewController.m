@@ -34,6 +34,7 @@ int secondsLeft;
     } else {
         MainViewController *main = [[MainViewController alloc] init];
         [self presentViewController:main animated:YES completion:nil];
+        [timer invalidate];
     }
 }
 

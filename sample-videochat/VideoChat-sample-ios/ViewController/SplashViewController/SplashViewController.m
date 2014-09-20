@@ -101,12 +101,13 @@
 #pragma mark QBChatDelegate
 
 - (void)chatDidLogin{
+    AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
     // Show Main controller
-//    MainViewController *mainViewController = [[MainViewController alloc] init];
-//    mainViewController.opponentID = appDelegate.currentUser == 1 ? appDelegate.testOpponents[5] : appDelegate.testOpponents[2];
-//    [self presentViewController:mainViewController animated:YES completion:nil];
-    DashboardViewController *dash = [[DashboardViewController alloc] init];
-    [self presentViewController:dash animated:YES completion:nil];
+    MainViewController *mainViewController = [[MainViewController alloc] init];
+    mainViewController.opponentID = appDelegate.currentUser == 1 ? appDelegate.testOpponents[5] : appDelegate.testOpponents[2];
+    [self presentViewController:mainViewController animated:YES completion:nil];
+//    DashboardViewController *dash = [[DashboardViewController alloc] init];
+//    [self presentViewController:dash animated:YES completion:nil];
 }
 
 - (void)chatDidNotLogin{
