@@ -31,7 +31,7 @@ int secondsLeft;
 - (void)updateTimer {
     if (secondsLeft > 1){
         secondsLeft--;
-        self.countDown.text = [NSString stringWithFormat:@"%2d", secondsLeft];
+        self.countDown.text = [NSString stringWithFormat:@"%1d", secondsLeft];
     } else {
         AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
         MainViewController *main = [[MainViewController alloc] init];
