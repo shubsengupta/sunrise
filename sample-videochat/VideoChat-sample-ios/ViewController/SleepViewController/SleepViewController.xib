@@ -7,6 +7,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SleepViewController">
             <connections>
+                <outlet property="alarmLabel" destination="tSa-S7-ed7" id="5Mm-fr-AH0"/>
+                <outlet property="timeLabel" destination="McZ-aC-ho3" id="TyQ-eU-sGg"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

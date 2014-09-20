@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SleepViewController : UIViewController
+@interface SleepViewController : UIViewController {
+    NSTimer *timer;
+}
+
+@property (strong, nonatomic) IBOutlet UILabel *timeLabel;
+@property (strong, nonatomic) IBOutlet UILabel *alarmLabel;
 
 @end
