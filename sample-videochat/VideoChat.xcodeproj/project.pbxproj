@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22D2F64B19CD7BCA009675CA /* 640x960.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D2F64A19CD7BCA009675CA /* 640x960.png */; };
+		22D2F64D19CD7C2E009675CA /* 640x1136.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D2F64C19CD7C2E009675CA /* 640x1136.png */; };
+		22D2F64F19CD7CBA009675CA /* 320x480.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D2F64E19CD7CBA009675CA /* 320x480.png */; };
 		3AA1FE5919CD6A2B0059B5DA /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA1FE5719CD6A2B0059B5DA /* DashboardViewController.m */; };
 		3AA1FE5A19CD6A2B0059B5DA /* DashboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AA1FE5819CD6A2B0059B5DA /* DashboardViewController.xib */; };
 		3AA1FE6519CD76B60059B5DA /* AlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA1FE6319CD76B60059B5DA /* AlarmViewController.m */; };
@@ -46,6 +49,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22D2F64A19CD7BCA009675CA /* 640x960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 640x960.png; sourceTree = "<group>"; };
+		22D2F64C19CD7C2E009675CA /* 640x1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 640x1136.png; sourceTree = "<group>"; };
+		22D2F64E19CD7CBA009675CA /* 320x480.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 320x480.png; sourceTree = "<group>"; };
 		3AA1FE5619CD6A2B0059B5DA /* DashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashboardViewController.h; sourceTree = "<group>"; };
 		3AA1FE5719CD6A2B0059B5DA /* DashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashboardViewController.m; sourceTree = "<group>"; };
 		3AA1FE5819CD6A2B0059B5DA /* DashboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DashboardViewController.xib; sourceTree = "<group>"; };
@@ -167,6 +173,9 @@
 		43774BCE160893D500DDBF12 = {
 			isa = PBXGroup;
 			children = (
+				22D2F64E19CD7CBA009675CA /* 320x480.png */,
+				22D2F64C19CD7C2E009675CA /* 640x1136.png */,
+				22D2F64A19CD7BCA009675CA /* 640x960.png */,
 				FA078F6016C94833003E8E5A /* VideoChat-sample-ios */,
 				FA078F9F16C948D7003E8E5A /* Other Sources */,
 				FA078F8C16C94869003E8E5A /* Resources */,
@@ -312,7 +321,7 @@
 				ORGANIZATIONNAME = Ruslan;
 				TargetAttributes = {
 					43774BD8160893D500DDBF12 = {
-						DevelopmentTeam = 8885H5G2YX;
+						DevelopmentTeam = 2S3D8J8M3T;
 					};
 				};
 			};
@@ -343,10 +352,13 @@
 				BF6860F919780D1F00496FFB /* Media.xcassets in Resources */,
 				3AA1FE6C19CD7A210059B5DA /* CallViewController.xib in Resources */,
 				FA078F8916C94833003E8E5A /* MainViewController.xib in Resources */,
+				22D2F64D19CD7C2E009675CA /* 640x1136.png in Resources */,
+				22D2F64F19CD7CBA009675CA /* 320x480.png in Resources */,
 				FA078F8B16C94833003E8E5A /* SplashViewController.xib in Resources */,
 				3AA1FE6619CD76B60059B5DA /* AlarmViewController.xib in Resources */,
 				FA078F9E16C94869003E8E5A /* ringing.wav in Resources */,
 				3AA1FE5A19CD6A2B0059B5DA /* DashboardViewController.xib in Resources */,
+				22D2F64B19CD7BCA009675CA /* 640x960.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,8 +481,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = "";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Taras Filatov (6AVH4TA956)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Taras Filatov (6AVH4TA956)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -496,7 +508,7 @@
 					"-lstdc++",
 				);
 				PRODUCT_NAME = VideoChat;
-				PROVISIONING_PROFILE = "4A7273D7-268E-4266-B796-A8956D96DE97";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
