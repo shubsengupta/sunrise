@@ -8,6 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SleepingViewController">
             <connections>
                 <outlet property="alarmLabel" destination="wNc-Bl-zvH" id="pJG-Co-VOQ"/>
+                <outlet property="hangUpButton" destination="ivY-hj-SQo" id="Hd9-pe-ZYK"/>
                 <outlet property="myVideoView" destination="YNB-j4-doV" id="mxa-O0-HdX"/>
                 <outlet property="opponentVideoView" destination="43m-JI-O5p" id="t3i-sB-gOL"/>
                 <outlet property="timeLabel" destination="hvT-hA-sCn" id="H4u-4R-b2U"/>

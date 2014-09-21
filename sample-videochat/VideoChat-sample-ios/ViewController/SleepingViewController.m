@@ -24,6 +24,7 @@
     [self updateAlarmText];
     [self updateTime];
     [self startTimer: timer];
+    hangUpButton.hidden = true;
 }
 
 - (void)viewDidAppear:(BOOL)animated{
@@ -98,6 +99,7 @@
     opponentVideoView.layer.borderWidth = 0;
     
     myVideoView.hidden = NO;
+    hangUpButton.hidden = NO;
     
     ringingPlayer = nil;
 }

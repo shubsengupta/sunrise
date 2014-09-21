@@ -13,6 +13,7 @@
     IBOutlet UIImageView *myVideoView;
     IBOutlet UILabel *timeLabel;
     IBOutlet UILabel *alarmLabel;
+    IBOutlet UIButton *hangUpButton;
     
     AVAudioPlayer *ringingPlayer;
 
