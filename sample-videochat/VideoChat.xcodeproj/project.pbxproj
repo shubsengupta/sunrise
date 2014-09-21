@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22986CC019CEC2570068938B /* MoxtraConversationResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 22986CBD19CEC2570068938B /* MoxtraConversationResources.bundle */; };
+		22986CC119CEC2570068938B /* MoxtraConversationSDK in Frameworks */ = {isa = PBXBuildFile; fileRef = 22986CBE19CEC2570068938B /* MoxtraConversationSDK */; };
+		22986CC619CEC2C80068938B /* ChatRatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22986CC419CEC2C80068938B /* ChatRatingViewController.m */; };
+		22986CC719CEC2C80068938B /* ChatRatingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22986CC519CEC2C80068938B /* ChatRatingViewController.xib */; };
 		2298E3C219CE18980086788B /* generalbg640x1136.png in Resources */ = {isa = PBXBuildFile; fileRef = 2298E3C119CE18980086788B /* generalbg640x1136.png */; };
 		2298E3C419CE29540086788B /* dashbg640x1136.png in Resources */ = {isa = PBXBuildFile; fileRef = 2298E3C319CE29540086788B /* dashbg640x1136.png */; };
 		22D2F64B19CD7BCA009675CA /* 640x960.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D2F64A19CD7BCA009675CA /* 640x960.png */; };
@@ -56,6 +60,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22986CBC19CEC2570068938B /* Moxtra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Moxtra.h; sourceTree = "<group>"; };
+		22986CBD19CEC2570068938B /* MoxtraConversationResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MoxtraConversationResources.bundle; sourceTree = "<group>"; };
+		22986CBE19CEC2570068938B /* MoxtraConversationSDK */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = MoxtraConversationSDK; sourceTree = "<group>"; };
+		22986CBF19CEC2570068938B /* MXClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXClient.h; sourceTree = "<group>"; };
+		22986CC319CEC2C80068938B /* ChatRatingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChatRatingViewController.h; path = ChatRatingViewController/ChatRatingViewController.h; sourceTree = "<group>"; };
+		22986CC419CEC2C80068938B /* ChatRatingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChatRatingViewController.m; path = ChatRatingViewController/ChatRatingViewController.m; sourceTree = "<group>"; };
+		22986CC519CEC2C80068938B /* ChatRatingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ChatRatingViewController.xib; path = ChatRatingViewController/ChatRatingViewController.xib; sourceTree = "<group>"; };
 		2298E3C119CE18980086788B /* generalbg640x1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = generalbg640x1136.png; sourceTree = "<group>"; };
 		2298E3C319CE29540086788B /* dashbg640x1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dashbg640x1136.png; sourceTree = "<group>"; };
 		22D2F64A19CD7BCA009675CA /* 640x960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 640x960.png; sourceTree = "<group>"; };
@@ -133,6 +144,7 @@
 				434E9CD11608A04F00A4FB2D /* SystemConfiguration.framework in Frameworks */,
 				434E9CCF1608A04800A4FB2D /* CFNetwork.framework in Frameworks */,
 				434E9CCD1608A03E00A4FB2D /* libxml2.dylib in Frameworks */,
+				22986CC119CEC2570068938B /* MoxtraConversationSDK in Frameworks */,
 				434E9CCB1608A02F00A4FB2D /* libresolv.dylib in Frameworks */,
 				434E9CC91608A01F00A4FB2D /* libz.dylib in Frameworks */,
 				43774BDE160893D500DDBF12 /* UIKit.framework in Frameworks */,
@@ -145,6 +157,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22986CBB19CEC2570068938B /* MoxtraConversationSDK.sdk */ = {
+			isa = PBXGroup;
+			children = (
+				22986CBC19CEC2570068938B /* Moxtra.h */,
+				22986CBD19CEC2570068938B /* MoxtraConversationResources.bundle */,
+				22986CBE19CEC2570068938B /* MoxtraConversationSDK */,
+				22986CBF19CEC2570068938B /* MXClient.h */,
+			);
+			name = MoxtraConversationSDK.sdk;
+			path = "../../../Downloads/Moxtra_Chat_iOS_V.121.140911 2/MoxtraConversationSDK.sdk";
+			sourceTree = "<group>";
+		};
+		22986CC219CEC2A10068938B /* ChatRatingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				22986CC319CEC2C80068938B /* ChatRatingViewController.h */,
+				22986CC419CEC2C80068938B /* ChatRatingViewController.m */,
+				22986CC519CEC2C80068938B /* ChatRatingViewController.xib */,
+			);
+			name = ChatRatingViewController;
+			sourceTree = "<group>";
+		};
 		3A59EB7919CE19FC007ACD80 /* SleepingViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +232,7 @@
 		43774BCE160893D500DDBF12 = {
 			isa = PBXGroup;
 			children = (
+				22986CBB19CEC2570068938B /* MoxtraConversationSDK.sdk */,
 				2298E3C119CE18980086788B /* generalbg640x1136.png */,
 				2298E3C319CE29540086788B /* dashbg640x1136.png */,
 				22D2F64E19CD7CBA009675CA /* 320x480.png */,
@@ -258,6 +293,7 @@
 		FA078F7316C94833003E8E5A /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				22986CC219CEC2A10068938B /* ChatRatingViewController */,
 				3A59EB7919CE19FC007ACD80 /* SleepingViewController */,
 				3AA1FE6D19CD94850059B5DA /* SleepViewController */,
 				3AA1FE6719CD79AD0059B5DA /* CallViewController */,
@@ -379,12 +415,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA078F7D16C94833003E8E5A /* InfoPlist.strings in Resources */,
+				22986CC719CEC2C80068938B /* ChatRatingViewController.xib in Resources */,
 				3AA1FE7219CD94AB0059B5DA /* SleepViewController.xib in Resources */,
 				BF6860F919780D1F00496FFB /* Media.xcassets in Resources */,
 				3A59EB7819CE1401007ACD80 /* blackpx.png in Resources */,
 				3AA1FE6C19CD7A210059B5DA /* CallViewController.xib in Resources */,
 				3AA1FE7419CDB2820059B5DA /* splashback640x1136.png in Resources */,
 				3A59EB8519CE5A9F007ACD80 /* bye.png in Resources */,
+				22986CC019CEC2570068938B /* MoxtraConversationResources.bundle in Resources */,
 				FA078F8916C94833003E8E5A /* MainViewController.xib in Resources */,
 				22D2F64D19CD7C2E009675CA /* 640x1136.png in Resources */,
 				22D2F64F19CD7CBA009675CA /* 320x480.png in Resources */,
@@ -407,6 +445,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AA1FE7119CD94AB0059B5DA /* SleepViewController.m in Sources */,
+				22986CC619CEC2C80068938B /* ChatRatingViewController.m in Sources */,
 				3AA1FE6519CD76B60059B5DA /* AlarmViewController.m in Sources */,
 				3AA1FE5919CD6A2B0059B5DA /* DashboardViewController.m in Sources */,
 				3A59EB8219CE1B7C007ACD80 /* SleepingViewController.m in Sources */,
@@ -535,6 +574,11 @@
 				);
 				INFOPLIST_FILE = "VideoChat-sample-ios/videoChat-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Shub/Downloads/Moxtra_Chat_iOS_V.121.140911,
+					2/MoxtraConversationSDK.sdk,
+				);
 				OTHER_LDFLAGS = (
 					"-lxml2",
 					"-ObjC",
@@ -576,6 +620,11 @@
 				);
 				INFOPLIST_FILE = "VideoChat-sample-ios/videoChat-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Shub/Downloads/Moxtra_Chat_iOS_V.121.140911,
+					2/MoxtraConversationSDK.sdk,
+				);
 				OTHER_LDFLAGS = (
 					"-lxml2",
 					"-ObjC",
