@@ -9,6 +9,7 @@
 #import "SplashViewController.h"
 #import "MainViewController.h"
 #import "DashboardViewController.h"
+#import "ChatRatingViewController.h"
 #import "AppDelegate.h"
 
 @interface SplashViewController ()
@@ -107,6 +108,7 @@
 //    mainViewController.opponentID = appDelegate.currentUser == 1 ? appDelegate.testOpponents[5] : appDelegate.testOpponents[2];
 //    [self presentViewController:mainViewController animated:YES completion:nil];
     DashboardViewController *dash = [[DashboardViewController alloc] init];
+    //ChatRatingViewController *dash = [[ChatRatingViewController alloc] init];
     [self presentViewController:dash animated:YES completion:nil];
 }
 

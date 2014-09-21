@@ -8,6 +8,7 @@
 
 #import "MainViewController.h"
 #import "DashboardViewController.h"
+#import "ChatRatingViewController.h"
 #import "AppDelegate.h"
 
 @interface MainViewController ()
@@ -78,7 +79,8 @@
     [[QBChat instance] unregisterVideoChatInstance:self.videoChat];
     self.videoChat = nil;
     
-    DashboardViewController *dash = [[DashboardViewController alloc] init];
+    //DashboardViewController *dash = [[DashboardViewController alloc] init];
+    ChatRatingViewController *dash = [[ChatRatingViewController alloc] init];
     [self presentViewController:dash animated:YES completion:nil];
 }
 
@@ -263,7 +265,8 @@
     [[QBChat instance] unregisterVideoChatInstance:self.videoChat];
     self.videoChat = nil;
     
-    DashboardViewController *dash = [[DashboardViewController alloc] init];
+    //DashboardViewController *dash = [[DashboardViewController alloc] init];
+    ChatRatingViewController *dash = [[ChatRatingViewController alloc] init];
     [self presentViewController:dash animated:YES completion:nil];
 }
 

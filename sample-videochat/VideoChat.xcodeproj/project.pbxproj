@@ -645,7 +645,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/Shub/Downloads/Moxtra_Chat_iOS_V.121.140911,
-					2/MoxtraConversationSDK.sdk,
+					MoxtraConversationSDK.sdk,
 				);
 				OTHER_LDFLAGS = (
 					"-lxml2",
@@ -691,7 +691,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/Shub/Downloads/Moxtra_Chat_iOS_V.121.140911,
-					2/MoxtraConversationSDK.sdk,
+					MoxtraConversationSDK.sdk,
 				);
 				OTHER_LDFLAGS = (
 					"-lxml2",
