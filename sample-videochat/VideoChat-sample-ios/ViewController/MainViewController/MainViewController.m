@@ -21,10 +21,6 @@
 {
     [super viewDidLoad];
     
-    opponentVideoView.layer.borderWidth = 1;
-    opponentVideoView.layer.borderColor = [[UIColor grayColor] CGColor];
-    opponentVideoView.layer.cornerRadius = 5;
-    
     AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
     navBar.topItem.title = appDelegate.currentUser == 1 ? @"User 1" : @"User 2";
     [callButton setTitle:appDelegate.currentUser == 1 ? @"Call User2" : @"Call User1" forState:UIControlStateNormal];
@@ -69,6 +65,20 @@
     ringigngLabel.text = @"Calling...";
     ringigngLabel.frame = CGRectMake(128, 375, 90, 37);
     callingActivityIndicator.hidden = NO;
+}
+
+- (IBAction)hangUp:(id)sender {
+    [self.videoChat finishCall];
+    myVideoView.hidden = YES;
+    
+    opponentVideoView.layer.contents = (id)[[UIImage imageNamed:@"blackpx.png"] CGImage];
+    opponentVideoView.image = [UIImage imageNamed:@"blackpx.png"];
+    
+    [[QBChat instance] unregisterVideoChatInstance:self.videoChat];
+    self.videoChat = nil;
+    
+    MainViewController *main = [[MainViewController alloc] init];
+    [self presentViewController:main animated:YES completion:nil];
 }
 
 - (void)reject{
@@ -251,6 +261,9 @@
     //
     [[QBChat instance] unregisterVideoChatInstance:self.videoChat];
     self.videoChat = nil;
+    
+    MainViewController *main = [[MainViewController alloc] init];
+    [self presentViewController:main animated:YES completion:nil];
 }
 
 - (void)chatCallDidStartWithUser:(NSUInteger)userID sessionID:(NSString *)sessionID{

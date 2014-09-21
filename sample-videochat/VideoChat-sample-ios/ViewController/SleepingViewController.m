@@ -7,6 +7,7 @@
 //
 
 #import "SleepingViewController.h"
+#import "MainViewController.h"
 #import "AppDelegate.h"
 
 @interface SleepingViewController ()
@@ -60,6 +61,19 @@
     timer = [NSTimer scheduledTimerWithTimeInterval:5.0f target:self selector:@selector(updateTime) userInfo:nil repeats:YES];
 }
 
+- (IBAction)hangUp:(id)sender {
+    [self.videoChat finishCall];
+    myVideoView.hidden = YES;
+    
+    opponentVideoView.layer.contents = (id)[[UIImage imageNamed:@"blackpx.png"] CGImage];
+    opponentVideoView.image = [UIImage imageNamed:@"blackpx.png"];
+    
+    [[QBChat instance] unregisterVideoChatInstance:self.videoChat];
+    self.videoChat = nil;
+    
+    MainViewController *main = [[MainViewController alloc] init];
+    [self presentViewController:main animated:YES completion:nil];
+}
 
 - (void)accept{
     NSLog(@"accept");
@@ -154,6 +168,9 @@
     //
     [[QBChat instance] unregisterVideoChatInstance:self.videoChat];
     self.videoChat = nil;
+    
+    MainViewController *main = [[MainViewController alloc] init];
+    [self presentViewController:main animated:YES completion:nil];
 }
 
 - (void)chatCallDidStartWithUser:(NSUInteger)userID sessionID:(NSString *)sessionID{
