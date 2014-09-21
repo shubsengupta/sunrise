@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VideoChat-sample-ios/ViewController/SleepingViewController.m"
-            timestampString = "432948824.799842"
+            timestampString = "432955487.43732"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
             landmarkName = "-chatDidReceiveCallRequestFromUser:withSessionID:conferenceType:"
             landmarkType = "5">
          </BreakpointContent>
@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VideoChat-sample-ios/ViewController/SleepingViewController.m"
-            timestampString = "432948406.546251"
+            timestampString = "432955487.43732"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
             landmarkName = "@implementation SleepingViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -106,11 +106,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VideoChat-sample-ios/ViewController/SleepingViewController.m"
-            timestampString = "432949107.820982"
+            timestampString = "432955487.43732"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
             landmarkName = "-accept"
             landmarkType = "5">
          </BreakpointContent>

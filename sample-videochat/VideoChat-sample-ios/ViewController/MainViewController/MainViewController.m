@@ -7,6 +7,7 @@
 //
 
 #import "MainViewController.h"
+#import "DashboardViewController.h"
 #import "AppDelegate.h"
 
 @interface MainViewController ()
@@ -77,8 +78,8 @@
     [[QBChat instance] unregisterVideoChatInstance:self.videoChat];
     self.videoChat = nil;
     
-    MainViewController *main = [[MainViewController alloc] init];
-    [self presentViewController:main animated:YES completion:nil];
+    DashboardViewController *dash = [[DashboardViewController alloc] init];
+    [self presentViewController:dash animated:YES completion:nil];
 }
 
 - (void)reject{
@@ -262,8 +263,8 @@
     [[QBChat instance] unregisterVideoChatInstance:self.videoChat];
     self.videoChat = nil;
     
-    MainViewController *main = [[MainViewController alloc] init];
-    [self presentViewController:main animated:YES completion:nil];
+    DashboardViewController *dash = [[DashboardViewController alloc] init];
+    [self presentViewController:dash animated:YES completion:nil];
 }
 
 - (void)chatCallDidStartWithUser:(NSUInteger)userID sessionID:(NSString *)sessionID{
