@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2294DA5A19CECB64003C0236 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2294DA5919CECB64003C0236 /* libc++.dylib */; };
+		2294DA5C19CECB7B003C0236 /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2294DA5B19CECB7B003C0236 /* libstdc++.6.dylib */; };
+		2294DA5E19CECB82003C0236 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2294DA5D19CECB82003C0236 /* libxml2.2.dylib */; };
+		2294DA6019CECBA8003C0236 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2294DA5F19CECBA8003C0236 /* AddressBook.framework */; };
+		2294DA6219CECBAF003C0236 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2294DA6119CECBAF003C0236 /* AddressBookUI.framework */; };
+		2294DA6419CECBB8003C0236 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2294DA6319CECBB8003C0236 /* AssetsLibrary.framework */; };
+		2294DA6619CECBE2003C0236 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2294DA6519CECBE2003C0236 /* CoreBluetooth.framework */; };
+		2294DA6819CECBEA003C0236 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2294DA6719CECBEA003C0236 /* CoreFoundation.framework */; };
+		2294DA6A19CECC0E003C0236 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2294DA6919CECC0E003C0236 /* CoreImage.framework */; };
+		2294DA6C19CECC3E003C0236 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2294DA6B19CECC3E003C0236 /* CoreText.framework */; };
+		2294DA6E19CECC50003C0236 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2294DA6D19CECC50003C0236 /* EventKit.framework */; };
+		2294DA7019CECC5E003C0236 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2294DA6F19CECC5E003C0236 /* ImageIO.framework */; };
+		2294DA7219CECCBD003C0236 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2294DA7119CECCBD003C0236 /* MapKit.framework */; };
+		2294DA7419CECCC9003C0236 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2294DA7319CECCC9003C0236 /* MediaPlayer.framework */; };
+		2294DA7619CECCD0003C0236 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2294DA7519CECCD0003C0236 /* MessageUI.framework */; };
+		2294DA7819CECCDF003C0236 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2294DA7719CECCDF003C0236 /* OpenGLES.framework */; };
+		2294DA7A19CECD00003C0236 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2294DA7919CECD00003C0236 /* StoreKit.framework */; };
 		22986CC019CEC2570068938B /* MoxtraConversationResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 22986CBD19CEC2570068938B /* MoxtraConversationResources.bundle */; };
 		22986CC119CEC2570068938B /* MoxtraConversationSDK in Frameworks */ = {isa = PBXBuildFile; fileRef = 22986CBE19CEC2570068938B /* MoxtraConversationSDK */; };
 		22986CC619CEC2C80068938B /* ChatRatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22986CC419CEC2C80068938B /* ChatRatingViewController.m */; };
@@ -60,6 +77,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2294DA5919CECB64003C0236 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		2294DA5B19CECB7B003C0236 /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
+		2294DA5D19CECB82003C0236 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		2294DA5F19CECBA8003C0236 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		2294DA6119CECBAF003C0236 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		2294DA6319CECBB8003C0236 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		2294DA6519CECBE2003C0236 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		2294DA6719CECBEA003C0236 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		2294DA6919CECC0E003C0236 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		2294DA6B19CECC3E003C0236 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		2294DA6D19CECC50003C0236 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		2294DA6F19CECC5E003C0236 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		2294DA7119CECCBD003C0236 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		2294DA7319CECCC9003C0236 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		2294DA7519CECCD0003C0236 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		2294DA7719CECCDF003C0236 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		2294DA7919CECD00003C0236 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		22986CBC19CEC2570068938B /* Moxtra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Moxtra.h; sourceTree = "<group>"; };
 		22986CBD19CEC2570068938B /* MoxtraConversationResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MoxtraConversationResources.bundle; sourceTree = "<group>"; };
 		22986CBE19CEC2570068938B /* MoxtraConversationSDK */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = MoxtraConversationSDK; sourceTree = "<group>"; };
@@ -131,25 +165,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2294DA7A19CECD00003C0236 /* StoreKit.framework in Frameworks */,
 				BF67F8581843F6410066F4C9 /* Security.framework in Frameworks */,
-				FAFF373916C2BF4100676978 /* AudioToolbox.framework in Frameworks */,
-				FAFF373716C2BF0500676978 /* Accelerate.framework in Frameworks */,
-				FACAA92716AD7B4A00A81F91 /* CoreMedia.framework in Frameworks */,
-				FACAA92516AD7B4500A81F91 /* CoreVideo.framework in Frameworks */,
-				FACAA92316AD7B3500A81F91 /* AVFoundation.framework in Frameworks */,
 				FACAA92116AD7AE200A81F91 /* QuartzCore.framework in Frameworks */,
-				434E9CD71608A06F00A4FB2D /* CoreData.framework in Frameworks */,
-				434E9CD51608A06300A4FB2D /* CoreLocation.framework in Frameworks */,
+				2294DA7819CECCDF003C0236 /* OpenGLES.framework in Frameworks */,
 				434E9CD31608A05800A4FB2D /* MobileCoreServices.framework in Frameworks */,
-				434E9CD11608A04F00A4FB2D /* SystemConfiguration.framework in Frameworks */,
+				2294DA7619CECCD0003C0236 /* MessageUI.framework in Frameworks */,
+				2294DA7419CECCC9003C0236 /* MediaPlayer.framework in Frameworks */,
+				2294DA7219CECCBD003C0236 /* MapKit.framework in Frameworks */,
+				2294DA7019CECC5E003C0236 /* ImageIO.framework in Frameworks */,
+				43774BE0160893D500DDBF12 /* Foundation.framework in Frameworks */,
+				2294DA6E19CECC50003C0236 /* EventKit.framework in Frameworks */,
+				FACAA92516AD7B4500A81F91 /* CoreVideo.framework in Frameworks */,
+				2294DA6C19CECC3E003C0236 /* CoreText.framework in Frameworks */,
+				FACAA92716AD7B4A00A81F91 /* CoreMedia.framework in Frameworks */,
+				434E9CD51608A06300A4FB2D /* CoreLocation.framework in Frameworks */,
+				2294DA6A19CECC0E003C0236 /* CoreImage.framework in Frameworks */,
+				43774BE2160893D500DDBF12 /* CoreGraphics.framework in Frameworks */,
+				2294DA6819CECBEA003C0236 /* CoreFoundation.framework in Frameworks */,
+				2294DA6619CECBE2003C0236 /* CoreBluetooth.framework in Frameworks */,
 				434E9CCF1608A04800A4FB2D /* CFNetwork.framework in Frameworks */,
+				FACAA92316AD7B3500A81F91 /* AVFoundation.framework in Frameworks */,
+				FAFF373916C2BF4100676978 /* AudioToolbox.framework in Frameworks */,
+				2294DA6419CECBB8003C0236 /* AssetsLibrary.framework in Frameworks */,
+				2294DA6219CECBAF003C0236 /* AddressBookUI.framework in Frameworks */,
+				2294DA6019CECBA8003C0236 /* AddressBook.framework in Frameworks */,
+				FAFF373716C2BF0500676978 /* Accelerate.framework in Frameworks */,
+				434E9CC91608A01F00A4FB2D /* libz.dylib in Frameworks */,
+				2294DA5E19CECB82003C0236 /* libxml2.2.dylib in Frameworks */,
+				2294DA5C19CECB7B003C0236 /* libstdc++.6.dylib in Frameworks */,
+				2294DA5A19CECB64003C0236 /* libc++.dylib in Frameworks */,
+				434E9CD71608A06F00A4FB2D /* CoreData.framework in Frameworks */,
+				434E9CD11608A04F00A4FB2D /* SystemConfiguration.framework in Frameworks */,
 				434E9CCD1608A03E00A4FB2D /* libxml2.dylib in Frameworks */,
 				22986CC119CEC2570068938B /* MoxtraConversationSDK in Frameworks */,
 				434E9CCB1608A02F00A4FB2D /* libresolv.dylib in Frameworks */,
-				434E9CC91608A01F00A4FB2D /* libz.dylib in Frameworks */,
 				43774BDE160893D500DDBF12 /* UIKit.framework in Frameworks */,
-				43774BE0160893D500DDBF12 /* Foundation.framework in Frameworks */,
-				43774BE2160893D500DDBF12 /* CoreGraphics.framework in Frameworks */,
 				BF6860F719780CA400496FFB /* Quickblox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +308,23 @@
 		43774BDC160893D500DDBF12 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2294DA7919CECD00003C0236 /* StoreKit.framework */,
+				2294DA7719CECCDF003C0236 /* OpenGLES.framework */,
+				2294DA7519CECCD0003C0236 /* MessageUI.framework */,
+				2294DA7319CECCC9003C0236 /* MediaPlayer.framework */,
+				2294DA7119CECCBD003C0236 /* MapKit.framework */,
+				2294DA6F19CECC5E003C0236 /* ImageIO.framework */,
+				2294DA6D19CECC50003C0236 /* EventKit.framework */,
+				2294DA6B19CECC3E003C0236 /* CoreText.framework */,
+				2294DA6919CECC0E003C0236 /* CoreImage.framework */,
+				2294DA6719CECBEA003C0236 /* CoreFoundation.framework */,
+				2294DA6519CECBE2003C0236 /* CoreBluetooth.framework */,
+				2294DA6319CECBB8003C0236 /* AssetsLibrary.framework */,
+				2294DA6119CECBAF003C0236 /* AddressBookUI.framework */,
+				2294DA5F19CECBA8003C0236 /* AddressBook.framework */,
+				2294DA5D19CECB82003C0236 /* libxml2.2.dylib */,
+				2294DA5B19CECB7B003C0236 /* libstdc++.6.dylib */,
+				2294DA5919CECB64003C0236 /* libc++.dylib */,
 				BF6860F619780CA400496FFB /* Quickblox.framework */,
 				BF67F8571843F6410066F4C9 /* Security.framework */,
 				FAFF373816C2BF4100676978 /* AudioToolbox.framework */,
