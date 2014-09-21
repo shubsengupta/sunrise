@@ -1,0 +1,21 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  username: root
+  password:
+  socket: /tmp/mysql.sock
+
+development:
+  <<: *default
+  database: sunrise_development
+
+test:
+  <<: *default
+  database: sunrise_test
+
+production:
+  <<: *default
+  database: appserver_production
+  username: appserver
+  password: <%= ENV['APPSERVER_DATABASE_PASSWORD'] %>
