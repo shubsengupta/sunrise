@@ -25,14 +25,11 @@
     [self updateTime];
     [self startTimer: timer];
     hangUpButton.hidden = true;
+    [self inAlarmTime:nil];
 }
 
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    
-    // Start sending chat presence
-    [QBChat instance].delegate = self;
-    [NSTimer scheduledTimerWithTimeInterval:30 target:[QBChat instance] selector:@selector(sendPresence) userInfo:nil repeats:YES];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -51,12 +48,49 @@
 }
 
 - (void)updateTime {
+    AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
     NSDate *today = [NSDate date];
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     // display in 12HR/24HR (i.e. 11:25PM or 23:25) format according to User Settings
     [dateFormatter setTimeStyle:NSDateFormatterShortStyle];
     NSString *currentTime = [dateFormatter stringFromDate:today];
     timeLabel.text = currentTime;
+    
+    if ([self inAlarmTime: appDelegate.alarmDate]) {
+        alarmLabel.textColor = [UIColor orangeColor];
+        if ([QBChat instance].delegate != self) {
+            // the connection is not activated, start it
+            [QBChat instance].delegate = self;
+            [NSTimer scheduledTimerWithTimeInterval:30 target:[QBChat instance] selector:@selector(sendPresence) userInfo:nil repeats:YES];
+        }
+    } else {
+        alarmLabel.textColor = [UIColor lightGrayColor];
+        if ([QBChat instance].delegate == self) {
+            // the connection shouldn't be active, kill it
+            [[QBChat instance] unregisterVideoChatInstance:self.videoChat];
+            self.videoChat = nil;
+            
+            DashboardViewController *dash = [[DashboardViewController alloc] init];
+            [self presentViewController:dash animated:YES completion:nil];
+        }
+    }
+}
+
+- (BOOL)inAlarmTime: (NSDate *)alarm {
+    NSCalendar *cal = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSDate *current = [NSDate date];
+    
+    // Get the hours, minutes, seconds
+    NSDateComponents *nowDC = [cal components:( NSHourCalendarUnit | NSMinuteCalendarUnit )
+                                          fromDate:current];
+    NSDateComponents *alDC = [cal components:(  NSHourCalendarUnit | NSMinuteCalendarUnit )
+                                     fromDate:alarm];
+    
+    int nowMin = [nowDC hour] * 60 + [nowDC minute];
+    int alMin = [alDC hour] * 60 + [alDC minute];
+    int difference = abs(nowMin - alMin);
+    
+    return difference <= 15;
 }
 
 - (void)startTimer:(NSTimer *)theTimer {
